@@ -20,7 +20,7 @@ class CounterController < ApplicationController
       end
       format.any(:swiftui_vml) do
         response.content_type = "application/swiftui+vml"
-        render :increment # will use application.swiftui_vml.erb layout
+        render :index # will use application.swiftui_vml.erb layout
       end
     end
   end

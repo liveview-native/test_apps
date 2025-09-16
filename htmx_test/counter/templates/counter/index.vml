@@ -1,0 +1,11 @@
+{% extends "counter/base.vml" %}
+
+{% block app_title %}HTMX Counter Demo - SwiftUI VML{% endblock %}
+
+{% block content %}
+    <HStack>
+        <Text>Session Counter:</Text>
+        <Text id="counter" hx-get="/counter/" hx-trigger="every 1s">0</Text>
+        <Text>seconds</Text>
+    </HStack>
+{% endblock %}

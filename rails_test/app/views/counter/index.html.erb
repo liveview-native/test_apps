@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Auto-Incrementing Counter</h1>
+  <%= render partial: "counter", locals: { counter: @counter } %>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  .counter-display {
+    font-size: 5rem;
+    color: #333;
+    margin: 2rem 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #666;
+  }
+</style>

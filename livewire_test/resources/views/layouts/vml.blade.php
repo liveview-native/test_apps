@@ -1,0 +1,9 @@
+<vml>
+    <head>
+        @livewireScriptConfig
+        @livewireScripts
+    </head>
+    <body>
+        @yield('content')
+    </body>
+</vml>

@@ -48,6 +48,12 @@ class Counter extends Component
     
     public function render()
     {
+        $acceptHeader = request()->header('Accept');
+        
+        if ($acceptHeader === 'application/swiftui+vml') {
+            return view('livewire.counter-vml');
+        }
+        
         return view('livewire.counter');
     }
 }

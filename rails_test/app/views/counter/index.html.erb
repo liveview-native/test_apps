@@ -1,3 +1,5 @@
+<%= turbo_stream_from "counter_stream" %>
+
 <div class="container">
   <h1>Auto-Incrementing Counter</h1>
   <%= render partial: "counter", locals: { counter: @counter } %>
